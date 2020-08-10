@@ -18,7 +18,7 @@ def add_post_by_title(title)
 end
   
 def self.post_count
-  self.all.count
+  Author.all.count
 end
   
   
