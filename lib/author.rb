@@ -8,7 +8,7 @@ def initialize(name)
 end
 
 def posts
-  @posts
+  Post.all.select{|title| title.author == self}
 end
   
 def add_post(post)
